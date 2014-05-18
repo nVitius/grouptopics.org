@@ -1,0 +1,11 @@
+default:
+  filters:
+    tags: '~@bug&&~@wip'
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url:  'http://localhost:8000'
+      default_session: 'selenium2'
+      javascript_session: 'selenium2'
+      browser_name: 'firefox'
+      selenium2:
+        capabilities: { 'browser': 'firefox', 'version': 'ANY' }
